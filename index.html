@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>AI-Style Passive Income Funnel</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Find Your First AI-Powered Income Stream</h1>
+    <div id="step1" class="step">
+      <h2>1. What's your domain expertise?</h2>
+      <label><input type="radio" name="domain" value="counseling"> Counseling / Mental Health</label>
+      <label><input type="radio" name="domain" value="writing"> Writing / Teaching</label>
+      <label><input type="radio" name="domain" value="design"> Design / Art</label>
+      <label><input type="radio" name="domain" value="tech"> Tech / Automation</label>
+      <button id="toStep2" disabled>Next →</button>
+    </div>
+
+    <div id="step2" class="step hidden">
+      <h2>2. How comfortable are you with technology?</h2>
+      <label><input type="radio" name="tech" value="none"> Very little</label>
+      <label><input type="radio" name="tech" value="some"> Some (Google, docs)</label>
+      <label><input type="radio" name="tech" value="high"> High (can tweak code)</label>
+      <button id="back1">← Back</button>
+      <button id="toStep3" disabled>Next →</button>
+    </div>
+
+    <div id="step3" class="step hidden">
+      <h2>3. How hands-on do you want to be?</h2>
+      <label><input type="radio" name="involve" value="setup"> Setup once, forget it</label>
+      <label><input type="radio" name="involve" value="hybrid"> Occasional updates</label>
+      <label><input type="radio" name="involve" value="full"> Continuous creation</label>
+      <button id="back2">← Back</button>
+      <button id="showResults" disabled>Show My Options</button>
+    </div>
+
+    <div id="results" class="step hidden">
+      <h2>Your Tailored Ideas</h2>
+      <ul id="ideas"></ul>
+      <button id="restart">Start Over</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
